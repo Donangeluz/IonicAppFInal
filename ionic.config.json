@@ -1,0 +1,7 @@
+{
+  "name": "AppGrupo",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
