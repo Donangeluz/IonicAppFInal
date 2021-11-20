@@ -1,0 +1,105 @@
+<app-header></app-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col class="ion-text-center">
+
+        <ion-text>
+          <h4><ion-icon name="calendar" size="small"></ion-icon> Reserva tu Espacio</h4>
+        </ion-text>
+      </ion-col>
+    </ion-row>
+      <ion-row>
+      <ion-col>
+        <img src="./assets/img/Gym1.jpeg"  alt="Gimnasio"/>
+        <ion-list>
+          <ion-list-header lines="full">
+            <ion-label>Datos personales</ion-label>
+          </ion-list-header>
+          <ion-item>
+            <ion-label position="floating">Nombre</ion-label>
+            <ion-input clearInput placeholder="Escribe tu nombre"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating">Edad</ion-label>
+            <ion-input clearInput inputmode="numeric" type="number" placeholder="Escribe tu edad"></ion-input>
+          </ion-item>
+        </ion-list>
+
+        <ion-list>
+
+
+          <ion-radio-group value="condado">
+            <ion-list-header lines="full">
+              <ion-label>Elije tu gimnasio</ion-label>
+            </ion-list-header>
+            <ion-item>
+              <ion-label><ion-icon slot="start" name="bonfire"></ion-icon> Condado</ion-label>
+              <ion-radio slot="end" value="condado"></ion-radio>
+            </ion-item>
+
+            <ion-item>
+              <ion-label><ion-icon slot="start" name="leaf"></ion-icon> El Bosque</ion-label>
+              <ion-radio slot="end" value="bosque"></ion-radio>
+            </ion-item>
+
+            <ion-item>
+              <ion-label><ion-icon slot="start" name="bug"></ion-icon> Carapungo</ion-label>
+              <ion-radio slot="end" value="carapungo"></ion-radio>
+            </ion-item>
+
+            <ion-item>
+              <ion-label><ion-icon slot="start" name="dice"></ion-icon> Quicentro</ion-label>
+              <ion-radio slot="end" value="quicentro"></ion-radio>
+            </ion-item>
+          </ion-radio-group>
+
+          <ion-list-header lines="full">
+            <ion-label>Realiza tu reservación</ion-label>
+          </ion-list-header>
+
+          <ion-item>
+            <ion-label position="floating">Fecha</ion-label>
+            <ion-input type="date" placeholder="fecha"></ion-input>
+          </ion-item>
+
+          <ion-item>
+            <ion-label position="floating">Hora</ion-label>
+            <ion-datetime displayFormat="HH:mm" min="08:00" max="22:00" minuteValues="0,15,30,45"></ion-datetime>
+          </ion-item>
+
+            <ion-item>
+              <ion-label position="stacked">Duración del entrenamiento</ion-label>
+              <ion-range min="0" max="240" step="30" snaps="true" pin="true" color="warning" value="30">
+                <ion-icon size="small" slot="start" name="stopwatch"></ion-icon>
+                <ion-icon slot="end" name="stopwatch"></ion-icon>
+              </ion-range>
+            </ion-item>
+
+        </ion-list>
+
+
+
+        <ion-card>
+          <ion-card-header>
+            <ion-card-subtitle>Condiciones</ion-card-subtitle>
+          </ion-card-header>
+          <ion-card-content>
+            Los gimnasios de Quito y Ecuador estamos listos para la reapertura. Cambiamos la forma de ingresar.
+            Cuando volvamos, por favor acércate a recepción y retira tu llavero para que puedas ingresar a nuestras
+            instalaciones más seguro y libre de contacto por Covid19. El deporte se va activando, entrenar, correr y caminar
+            es seguro con nuestro Protocolo de Bioseguridad, revisado y aprobado por las autoridades. Por favor acceda a éste
+            documento para mayor detalle con el cual los gimnasios abriremos las puertas próximamente.
+          </ion-card-content>
+          <ion-item lines="none">
+            <ion-label>Acepto las condiciones</ion-label>
+            <ion-checkbox slot="start"></ion-checkbox>
+          </ion-item>
+
+        </ion-card>
+        <ion-button expand="block" color="warning">Confirmar Reserva</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

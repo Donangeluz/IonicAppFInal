@@ -1,5 +1,82 @@
 <app-header></app-header>
 
 <ion-content>
-  <h1>Instructores</h1>
+  <ion-grid>
+    <ion-row>
+      <ion-col class="ion-text-center">
+        <ion-text>
+          <h4><ion-icon name="people" size="small"></ion-icon> Instructores</h4>
+        </ion-text>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+
+
+
+
+     <ion-card>
+        <ion-card-header>
+          <ion-card-subtitle>TRAINNER</ion-card-subtitle>
+          <ion-card-title>MARÍA RAMOS</ion-card-title>
+        </ion-card-header>
+        <ion-img src="./assets/img/trainer1.jpg"></ion-img>
+        <ion-card-content>
+          Aprende los diferentes ritmos latinos en sus clases, experta en bailes
+          latinos y tropicales, te divertirás y quemarás calorías como nunca.
+        </ion-card-content>
+      </ion-card>
+      <ion-card>
+        <ion-card-header>
+          <ion-card-subtitle>TRAINNER</ion-card-subtitle>
+          <ion-card-title>CARLOS PÉREZ </ion-card-title>
+        </ion-card-header>
+        <ion-img src="./assets/img/trainer2.jpg"></ion-img>
+        <ion-card-content>
+          Con sus variadas técnicas de entrenamiento te aseguramos que mejorarás tu
+          fuerza y resistencia en menos tiempo del que te imaginas.
+        </ion-card-content>
+      </ion-card>
+      <ion-card>
+        <ion-card-header>
+          <ion-card-subtitle>TRAINNER</ion-card-subtitle>
+          <ion-card-title>JIMENA CHALA </ion-card-title>
+        </ion-card-header>
+        <ion-img src="./assets/img/trainer3.jpg"></ion-img>
+        <ion-card-content>
+          Con más de 15 años de experiencia como profesora de aerobicos,
+          coach de entrenamiento funcional y crossfit aplicado a un gimnasio.
+        </ion-card-content>
+      </ion-card>
+
+        <ion-list>
+          <ion-list-header lines="full">
+            <ion-label>Inscripción</ion-label>
+          </ion-list-header>
+
+          <ion-item>
+            <ion-label position="floating">Nombre completo</ion-label>
+            <ion-input></ion-input>
+          </ion-item>
+
+          <ion-item>
+            <ion-label position="floating">DNI.</ion-label>
+            <ion-input></ion-input>
+          </ion-item>
+
+          <ion-item>
+            <ion-label position="floating">Fecha de Inicio</ion-label>
+            <ion-input type="date" placeholder="fecha"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label>Presencial</ion-label>
+            <ion-toggle [(ngModel)]="p"></ion-toggle>
+          </ion-item>
+          <ion-button expand="block" color="warning">Enviar</ion-button>
+        </ion-list>
+
+  </ion-col>
+  </ion-row>
+  </ion-grid>
 </ion-content>
